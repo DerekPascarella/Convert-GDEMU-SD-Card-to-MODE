@@ -1,5 +1,5 @@
 # Convert GDEMU SD Card to MODE
-A utility to convert a GDEMU-formatted SD card to one suited for MODE.
+A utility to convert a [GDEMU](https://gdemu.wordpress.com/)-formatted SD card to one suited for the [MODE](https://shop.terraonion.com/shop/product/terraonion-mode-dreamcast-saturn-ode/view).
 
 This utility will move, rename, and delete files on the target SD card in order to conform to MODE's requirements, including single-folder multi-disc support. Please do not run this program against a copy of your daily-use GDEMU SD card. Instead, use a copy or backup.
 
