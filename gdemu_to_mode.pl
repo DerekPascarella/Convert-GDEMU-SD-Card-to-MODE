@@ -63,7 +63,7 @@ print "Convert GDEMU SD Card to MODE v1.0\n";
 print "Written by Derek Pascarella (ateam)\n\n";
 
 # Print warning message and require user to confirm before proceeding.
-print wrap("", "", "WARNING! This utility will move, rename, and delete files on the target SD card in order to conform to MODE's requirements. Please run this program against a copy of your daily-use GDEMU SD card.");
+print wrap("", "", "WARNING! This utility will move, rename, and delete files on the target SD card in order to conform to MODE's requirements. Please do not run this program against a copy of your daily-use GDEMU SD card. Instead, use a copy or backup.");
 print "\n\nProceed with converting the GDEMU SD card? (Y/N) ";
 chop($proceed = <STDIN>);
 
