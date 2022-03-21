@@ -21,3 +21,20 @@ Generic usage:
 ```
 gdemu_to_mode <PATH_TO_SD_CARD>
 ```
+
+## Example Scenario
+In this example, our SD card formatted for GDEMU+GDMenu appears as follows.
+
+IMAGE GOES HERE
+
+At the terminal, we'll execute `gdemu_to_mode.exe` to begin conversion.
+
+IMAGE GOES HERE
+
+After conversion, the following folders appear within the `DREAMCAST` folder in the root of the SD card.
+
+IMAGE GOES HERE
+
+Below, we see an example of a single-folder multi-disc game.
+
+IMAGE GOES HERE
