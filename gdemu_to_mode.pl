@@ -61,7 +61,7 @@ elsif(!-R $sd_path_source)
 }
 
 # Print program information.
-print "Convert GDEMU SD Card to MODE v1.0\n";
+print "\nConvert GDEMU SD Card to MODE v1.0\n";
 print "Written by Derek Pascarella (ateam)\n\n";
 
 # Print warning message and require user to confirm before proceeding.
@@ -323,7 +323,7 @@ print "> SD card conversion complete!\n\n";
 # Print final status message.
 print "Disc images processed: " . $disc_image_count . "\n";
 print "Multi-disc game count: " . $multi_disc_game_count . "\n";
-print "   Unknown game count: " . $unknown_game_name_counter . "\n";
+print "   Unknown game count: " . $unknown_game_name_counter . "\n\n";
 
 # Subroutine to throw a specified exception.
 #
