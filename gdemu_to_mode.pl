@@ -18,7 +18,9 @@ my $sd_path_source = $ARGV[0];
 # Define/initialize variables.
 my $disc_image_count = 0;
 my $multi_disc_game_count = 0;
-my $unknown_game_name_counter = 0;
+my $unknown_game_name_count = 0;
+my $cdi_count = 0;
+my $gdi_count = 0;
 my $sd_path_source_handler;
 my $sd_game_folder_handler;
 my $sd_image_type_check_handler;
@@ -106,6 +108,17 @@ foreach $sd_subfolder (sort { 'numeric'; $a <=> $b }  readdir($sd_path_source_ha
 	# Skip folders that don't contain a disc image.
 	next if(!grep(/\.cdi/, @image_presence_game_files) && !grep(/\.gdi/, @image_presence_game_files));
 
+	# Increase CDI count by one.
+	if(grep(/\.cdi/, @image_presence_game_files))
+	{
+		$cdi_count ++;
+	}
+	# Increase GDI count by one.
+	elsif(grep(/\.gdi/, @image_presence_game_files))
+	{
+		$gdi_count ++;
+	}
+
 	# Increase disc image count by one.
 	$disc_image_count ++;
 
@@ -135,8 +148,8 @@ foreach $sd_subfolder (sort { 'numeric'; $a <=> $b }  readdir($sd_path_source_ha
 	else
 	{
 		# Increase unknown game name counter by one and store name.
-		$unknown_game_name_counter ++;
-		$game_name = "UNKNOWN $unknown_game_name_counter";
+		$unknown_game_name_count ++;
+		$game_name = "UNKNOWN " . $unknown_game_name_count;
 	}
 
 	# Print current game.
@@ -322,8 +335,10 @@ print "> SD card conversion complete!\n\n";
 
 # Print final status message.
 print "Disc images processed: " . $disc_image_count . "\n";
+print " GDI images processed: " . $gdi_count . "\n";
+print " CDI images processed: " . $cdi_count . "\n";
 print "Multi-disc game count: " . $multi_disc_game_count . "\n";
-print "   Unknown game count: " . $unknown_game_name_counter . "\n\n";
+print "   Unknown game count: " . $unknown_game_name_count . "\n\n";
 
 # Subroutine to throw a specified exception.
 #
