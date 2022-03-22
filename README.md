@@ -62,29 +62,29 @@ Proceed with converting the GDEMU SD card? (Y/N) y
 
 > Processing GDEMU SD card...
 
-      Folder number: 02
-          Game name: 18 WHEELER - AMERICAN PRO TRUCKER
+        Folder number: 02
+            Game name: 18 WHEELER - AMERICAN PRO TRUCKER
 
-      Folder number: 03
-          Game name: 4 WHEEL THUNDER
+        Folder number: 03
+            Game name: 4 WHEEL THUNDER
 
-      Folder number: 04
-          Game name: 4X4 EVOLUTION
+        Folder number: 04
+            Game name: 4X4 EVOLUTION
 
-      Folder number: 05
-          Game name: ALICE DREAMS TOURNAMENT
+        Folder number: 05
+            Game name: ALICE DREAMS TOURNAMENT
 
-      Folder number: 06
-          Game name: ALIEN FRONT ONLINE
+        Folder number: 06
+            Game name: ALIEN FRONT ONLINE
 
-      Folder number: 07
-          Game name: ALONE IN THE DARK - THE NEW NIGHTMARE
+        Folder number: 07
+            Game name: ALONE IN THE DARK - THE NEW NIGHTMARE
 
-      Folder number: 08
-          Game name: ALONE IN THE DARK - THE NEW NIGHTMARE (DISC 2)
+        Folder number: 08
+            Game name: ALONE IN THE DARK - THE NEW NIGHTMARE (DISC 2)
 
-      Folder number: 09
-          Game name: AQUA GT
+        Folder number: 09
+            Game name: AQUA GT
 
 > Initial conversion complete!
 
