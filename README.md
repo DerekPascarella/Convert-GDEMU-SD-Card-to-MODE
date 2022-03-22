@@ -128,3 +128,12 @@ Furthermore, the GDI files themselves are modified to reflect the new filenames.
 4 100806 0 2352 disc1_track04.raw 0
 5 101407 4 2352 disc1_track05.bin 0
 ```
+
+```
+5
+1 0 4 2352 disc2_track01.bin 0
+2 756 0 2352 disc2_track02.raw 0
+3 45000 4 2352 disc2_track03.bin 0
+4 59804 0 2352 disc2_track04.raw 0
+5 60405 4 2352 disc2_track05.bin 0
+```
