@@ -153,8 +153,8 @@ foreach $sd_subfolder (sort { 'numeric'; $a <=> $b }  readdir($sd_path_source_ha
 	}
 
 	# Print current game.
-	print "      Folder number: " . $sd_subfolder . "\n";
-	print "          Game name: " . $game_name;
+	print "        Folder number: " . $sd_subfolder . "\n";
+	print "            Game name: " . $game_name;
 
 	# Remove text files from subfolder.
 	unlink glob($sd_path_source . "/" . $sd_subfolder . "/*.txt");
