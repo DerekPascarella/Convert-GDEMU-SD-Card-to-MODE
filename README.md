@@ -16,7 +16,8 @@ Below is a specific list of the current features.
 * All numbered folders (.e.g, `02`, `03`, etc.) renamed based on `name.txt`.
 * To take advantage of MODE's automatic disc-queueing abilities, multi-disc games are grouped in the same folder with all of their files renamed for proper alphanumeric sorting.
 * Invalid filename characters inherited from `name.txt` are automatically stripped and/or converted.
-* Folders that don't contain a valid disc image are skipped.
+* Folders that don't contain a valid game disc image are skipped and deleted (e.g., `01`).
+* `GDEMU.ini` configuration file automatically deleted.
 
 ## Example Usage
 Generic usage:
