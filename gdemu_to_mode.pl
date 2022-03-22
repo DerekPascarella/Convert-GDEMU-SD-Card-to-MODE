@@ -22,21 +22,23 @@ my $unknown_game_name_counter = 0;
 my $sd_path_source_handler;
 my $sd_game_folder_handler;
 my $sd_image_type_check_handler;
+my $sd_image_presence_check_handler;
 my $sd_multi_disc_handler;
 my $sd_subfolder;
 my $sd_game_file;
 my $game_name_handle;
 my $game_name;
-my $gdi_filename;
-my $gdi_track_filename;
-my $gdi_data;
-my @gdi_toc;
-my $multi_disc_game_name;
-my @multi_disc_game_files;
 my $error;
 my $proceed;
 my $i;
 my $disc_number;
+my $gdi_filename;
+my $gdi_track_filename;
+my $gdi_data;
+my $multi_disc_game_name;
+my @gdi_toc;
+my @multi_disc_game_files;
+my @image_presence_game_files;
 my %multi_disc_games;
 
 # Path to source SD card is missing.
@@ -95,6 +97,14 @@ foreach $sd_subfolder (sort { 'numeric'; $a <=> $b }  readdir($sd_path_source_ha
 
 	# Skip newly created "DREAMCAST" folder.
 	next if($sd_subfolder eq "DREAMCAST");
+
+	# Open game folder containing disc image to detect disc image type.
+	opendir($sd_image_presence_check_handler, $sd_path_source . "/" . $sd_subfolder);
+	@image_presence_game_files = readdir($sd_image_presence_check_handler);
+	closedir($sd_image_presence_check_handler);
+
+	# Skip folders that don't contain a disc image.
+	next if(!grep(/\.cdi/, @image_presence_game_files) && !grep(/\.gdi/, @image_presence_game_files));
 
 	# Increase disc image count by one.
 	$disc_image_count ++;
@@ -225,7 +235,7 @@ if($multi_disc_game_count > 0)
 			rename($sd_path_source . "/DREAMCAST/" . $sd_subfolder . "/" . $sd_game_file, $sd_path_source . "/DREAMCAST/" . $sd_subfolder . "/disc" . $disc_number . "_" . $sd_game_file);
 		}
 		# Current game is a GDI.
-		else
+		elsif(grep /\.gdi/, @multi_disc_game_files)
 		{
 			# Open game folder containing disc image.
 			opendir($sd_game_folder_handler, $sd_path_source . "/DREAMCAST/" . $sd_subfolder);
@@ -313,6 +323,7 @@ print "> SD card conversion complete!\n\n";
 # Print final status message.
 print "Disc images processed: " . $disc_image_count . "\n";
 print "Multi-disc game count: " . $multi_disc_game_count . "\n";
+print "   Unknown game count: " . $unknown_game_name_counter . "\n";
 
 # Subroutine to throw a specified exception.
 #
