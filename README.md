@@ -34,12 +34,97 @@ IMAGE GOES HERE
 
 At the terminal, we'll execute `gdemu_to_mode.exe` to begin conversion.
 
-IMAGE GOES HERE
+```
+PS C:\> .\gdemu_to_mode.exe E:\
+
+Convert GDEMU SD Card to MODE v1.0
+Written by Derek Pascarella (ateam)
+
+WARNING! This utility will move, rename, and delete files on the target
+SD card in order to conform to MODE's requirements. Please do not run
+this program against a copy of your daily-use GDEMU SD card. Instead,
+use a copy or backup.
+
+Proceed with converting the GDEMU SD card? (Y/N) y
+
+> Creating "DREAMCAST" folder...
+
+> Processing GDEMU SD card...
+
+      Folder number: 02
+          Game name: 18 WHEELER - AMERICAN PRO TRUCKER
+
+      Folder number: 03
+          Game name: 4 WHEEL THUNDER
+
+      Folder number: 04
+          Game name: 4X4 EVOLUTION
+
+      Folder number: 05
+          Game name: ALICE DREAMS TOURNAMENT
+
+      Folder number: 06
+          Game name: ALIEN FRONT ONLINE
+
+      Folder number: 07
+          Game name: ALONE IN THE DARK - THE NEW NIGHTMARE
+
+      Folder number: 08
+          Game name: ALONE IN THE DARK - THE NEW NIGHTMARE (DISC 2)
+
+      Folder number: 09
+          Game name: AQUA GT
+
+> Initial conversion complete!
+
+> Waiting five seconds before grouping multi-disc games...
+
+    Multi-disc game: ALONE IN THE DARK - THE NEW NIGHTMARE (2 DISCS)
+
+> SD card conversion complete!
+
+Disc images processed: 8
+Multi-disc game count: 1
+   Unknown game count: 0
+
+```
 
 After conversion, the following folders appear within the `DREAMCAST` folder in the root of the SD card.
 
-IMAGE GOES HERE
+```
+18 WHEELER - AMERICAN PRO TRUCKER
+4 WHEEL THUNDER
+4X4 EVOLUTION
+ALICE DREAMS TOURNAMENT
+ALIEN FRONT ONLINE
+ALONE IN THE DARK - THE NEW NIGHTMARE
+AQUA GT
+```
 
 Below, we see an example of a single-folder multi-disc game.
 
-IMAGE GOES HERE
+```
+disc1_disc.gdi
+disc1_track01.bin
+disc1_track02.raw
+disc1_track03.bin
+disc1_track04.raw
+disc1_track05.bin
+disc2_disc.gdi
+disc2_track01.bin
+disc2_track02.raw
+disc2_track03.bin
+disc2_track04.raw
+disc2_track05.bin
+```
+
+Furthermore, the GDI files themselves are modified to reflect the new filenames.
+
+```
+5
+1 0 4 2352 disc1_track01.bin 0
+2 756 0 2352 disc1_track02.raw 0
+3 45000 4 2352 disc1_track03.bin 0
+4 100806 0 2352 disc1_track04.raw 0
+5 101407 4 2352 disc1_track05.bin 0
+```
