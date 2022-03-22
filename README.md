@@ -95,6 +95,8 @@ Proceed with converting the GDEMU SD card? (Y/N) y
 > SD card conversion complete!
 
 Disc images processed: 8
+ GDI images processed: 7
+ CDI images processed: 1
 Multi-disc game count: 1
    Unknown game count: 0
 
