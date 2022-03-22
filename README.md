@@ -30,7 +30,18 @@ gdemu_to_mode <PATH_TO_SD_CARD>
 ## Example Scenario
 In this example, our SD card formatted for GDEMU+GDMenu appears as follows.
 
-IMAGE GOES HERE
+```
+01
+02
+03
+04
+05
+06
+07
+08
+09
+GDEMU.INI
+```
 
 At the terminal, we'll execute `gdemu_to_mode.exe` to begin conversion.
 
