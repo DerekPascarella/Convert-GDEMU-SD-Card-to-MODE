@@ -19,6 +19,7 @@ Below is a specific list of the current features.
 * Folders that don't contain a valid game disc image are skipped.
 * GDMenu folder (`01`) ignored and deleted.
 * `GDEMU.ini` configuration file automatically deleted.
+* If no `name.txt` file is found, `UNKNOWN X` (where `X` is iterated over) is used as game's folder name.
 
 ## Example Usage
 Generic usage:
