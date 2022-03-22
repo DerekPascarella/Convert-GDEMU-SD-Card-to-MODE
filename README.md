@@ -90,7 +90,7 @@ Proceed with converting the GDEMU SD card? (Y/N) y
 
 > Waiting five seconds before grouping multi-disc games...
 
-    Multi-disc game: ALONE IN THE DARK - THE NEW NIGHTMARE (2 DISCS)
+      Multi-disc game: ALONE IN THE DARK - THE NEW NIGHTMARE (2 DISCS)
 
 > SD card conversion complete!
 
