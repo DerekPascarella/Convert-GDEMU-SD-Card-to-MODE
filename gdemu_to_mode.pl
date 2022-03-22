@@ -82,7 +82,7 @@ print "> Processing GDEMU SD card...\n\n";
 opendir($sd_path_source_handler, $sd_path_source);
 
 # Iterate through contents of SD card in alphanumeric order.
-foreach $sd_subfolder (sort(readdir($sd_path_source_handler)))
+foreach $sd_subfolder (sort { 'numeric'; $a <=> $b }  readdir($sd_path_source_handler))
 {
 	# Skip "." and "..".
 	next if($sd_subfolder =~ /^\.\.?/);
