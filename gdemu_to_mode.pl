@@ -300,7 +300,7 @@ if($multi_disc_game_count > 0)
 	foreach $multi_disc_game_name (keys %multi_disc_games)
 	{
 		# Print current game.
-		print "    Multi-disc game: " . $multi_disc_game_name . " (" . $multi_disc_games{$multi_disc_game_name} . " DISCS)\n\n";
+		print "      Multi-disc game: " . $multi_disc_game_name . " (" . $multi_disc_games{$multi_disc_game_name} . " DISCS)\n\n";
 
 		# Create new base folder for multi-disc game.
 		mkdir($sd_path_source . "/DREAMCAST/" . $multi_disc_game_name);
