@@ -3,7 +3,7 @@ A utility to convert a [GDEMU](https://gdemu.wordpress.com/)-formatted SD card t
 
 This utility will move, rename, and delete files on the target SD card in order to conform to MODE's requirements, including single-folder multi-disc support. Please do not run this program against a copy of your daily-use GDEMU SD card. Instead, use a copy or backup.
 
-Note that this utility expects the target SD card to have been created with [SD Card Maker for GDMenu](https://github.com/sonik-br/GDMENUCardManager).
+Note that this utility expects the target SD card to have been created with Madsheep's SD Card Maker for GDMenu (or any other management tool that conforms to GDMenu's standards).
 
 ## Current Version
 Convert GDEMU SD Card to MODE is currently at version 1.0.
