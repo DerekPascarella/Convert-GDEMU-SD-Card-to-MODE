@@ -6,7 +6,7 @@ This utility will move, rename, and delete files on the target SD card in order 
 Note that this utility expects the target SD card to have been created with Madsheep's SD Card Maker for GDMenu (or any other management tool that conforms to GDMenu's standards).
 
 ## Current Version
-Convert GDEMU SD Card to MODE is currently at version 1.0.
+Convert GDEMU SD Card to MODE is currently at version [1.0](https://github.com/DerekPascarella/Convert-GDEMU-SD-Card-to-MODE/raw/main/gdemu_to_mode.exe).
 
 ## Supported Features
 Below is a specific list of the current features.
