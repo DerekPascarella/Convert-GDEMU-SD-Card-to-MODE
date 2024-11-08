@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# Convert GDEMU SD Card to MODE v1.0
+# Convert GDEMU SD Card to MODE v1.1
 # Written by Derek Pascarella (ateam)
 #
 # A utility to convert a GDEMU-formatted SD card to one suited for MODE.
@@ -63,7 +63,7 @@ elsif(!-R $sd_path_source)
 }
 
 # Print program information.
-print "\nConvert GDEMU SD Card to MODE v1.0\n";
+print "\nConvert GDEMU SD Card to MODE v1.1\n";
 print "Written by Derek Pascarella (ateam)\n\n";
 
 # Print warning message and require user to confirm before proceeding.
@@ -74,6 +74,10 @@ chop($proceed = <STDIN>);
 # If user does not wish to proceed, terminate program.
 if(lc($proceed) ne "y")
 {
+	print "\nPress Enter to exit.\n";
+	
+	<STDIN>;
+
 	exit;
 }
 
@@ -339,6 +343,8 @@ print " GDI images processed: " . $gdi_count . "\n";
 print " CDI images processed: " . $cdi_count . "\n";
 print "Multi-disc game count: " . $multi_disc_game_count . "\n";
 print "   Unknown game count: " . $unknown_game_name_count . "\n\n";
+print "Press Enter to exit.\n";
+<STDIN>;
 
 # Subroutine to throw a specified exception.
 #
@@ -347,7 +353,12 @@ sub show_error
 {
 	my $error = $_[0];
 
-	die "Convert GDEMU SD Card to MODE v1.0\nWritten by Derek Pascarella (ateam)\n\n$error\n\nUSAGE: gdemu_to_mode <PATH_TO_SD_CARD>\n";
+	print STDERR "Convert GDEMU SD Card to MODE v1.1\nWritten by Derek Pascarella (ateam)\n\n$error\n\nUSAGE: gdemu_to_mode <PATH_TO_SD_CARD>\n";
+	print "Press Enter to exit.\n";
+	
+	<STDIN>;
+	
+	exit;
 }
 
 # Subroutine to read a specified file.
