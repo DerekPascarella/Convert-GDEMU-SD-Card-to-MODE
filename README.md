@@ -33,6 +33,7 @@ Below is a specific list of the current features.
 For convenience, an SD card can be dragged directly onto `gdemu_to_mode.exe`.
 
 Alternative, it can be invoked at the command line, as seen below.
+
 ```
 gdemu_to_mode <PATH_TO_SD_CARD>
 ```
@@ -53,7 +54,7 @@ In this example, our SD card formatted for GDEMU+GDMenu appears as follows.
 GDEMU.INI
 ```
 
-Next, we'll drag our SD card onto `gdemu_to_mode.exe` to begin processing the SD card.
+Next, we'll drag our SD card onto `gdemu_to_mode.exe` to begin processing it.
 
 ```
 
