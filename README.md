@@ -53,7 +53,7 @@ In this example, our SD card formatted for GDEMU+GDMenu appears as follows.
 GDEMU.INI
 ```
 
-At the terminal, we'll execute `gdemu_to_mode.exe` to begin conversion.
+Next, we'll drag our SD card onto `gdemu_to_mode.exe` to begin processing the SD card.
 
 ```
 
