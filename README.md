@@ -8,7 +8,13 @@ Note that this utility expects the target SD card to have been created with Mads
 ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) **IMPORTANT:** *Please do not run this program against your daily-use GDEMU SD card. Instead, use a copy or backup until you're sure it works with your disc image collection.*
 
 ## Current Version
-Convert GDEMU SD Card to MODE is currently at version [1.0](https://github.com/DerekPascarella/Convert-GDEMU-SD-Card-to-MODE/raw/main/gdemu_to_mode.exe).
+Convert GDEMU SD Card to MODE is currently at version [1.1](https://github.com/DerekPascarella/Convert-GDEMU-SD-Card-to-MODE/raw/main/gdemu_to_mode.exe).
+
+## Changelog
+* Version 1.1 (2024-11-08)
+  * Added support for dragging SD card directly onto executable for ease of use.
+* Version 1.0 (2022-03-21)
+  * Initial release.
 
 ## Supported Features
 Below is a specific list of the current features.
@@ -24,7 +30,9 @@ Below is a specific list of the current features.
 * If no `name.txt` file is found, `UNKNOWN X` (where `X` is iterated over) is used as game's folder name.
 
 ## Example Usage
-Generic usage:
+For convenience, an SD card can be dragged directly onto `gdemu_to_mode.exe`.
+
+Alternative, it can be invoked at the command line, as seen below.
 ```
 gdemu_to_mode <PATH_TO_SD_CARD>
 ```
@@ -48,7 +56,6 @@ GDEMU.INI
 At the terminal, we'll execute `gdemu_to_mode.exe` to begin conversion.
 
 ```
-PS C:\> .\gdemu_to_mode.exe E:\
 
 Convert GDEMU SD Card to MODE v1.0
 Written by Derek Pascarella (ateam)
@@ -101,6 +108,8 @@ Disc images processed: 8
  CDI images processed: 1
 Multi-disc game count: 1
    Unknown game count: 0
+
+Press Enter to exit
 
 ```
 
