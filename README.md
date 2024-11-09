@@ -32,7 +32,7 @@ Below is a specific list of the current features.
 ## Example Usage
 For convenience, an SD card can be dragged directly onto `gdemu_to_mode.exe`.
 
-Alternative, it can be invoked at the command line, as seen below.
+Alternatively, it can be invoked at the command line, as seen below.
 
 ```
 gdemu_to_mode <PATH_TO_SD_CARD>
